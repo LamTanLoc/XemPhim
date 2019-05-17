@@ -1,0 +1,44 @@
+@mixin contents($width, $bg) {
+    width:$width;
+    background-color:$bg;
+    text-align: center;
+    padding: 200px 0;
+    color: white;
+}
+
+@mixin header_footer($bg) {
+    background-color: $bg;
+    text-align: center;
+    color: white;
+    padding: 25px 0;
+}
+
+
+.header{
+  
+   
+    @include header_footer(rgb(204, 82, 82));
+    
+}
+
+.contents{
+    display:flex;
+    .content{
+        
+      
+        @include contents(70%, rgb(196, 196, 59));
+    }
+
+    .sidebar{
+        
+       
+        @include contents(30%, rgb(145, 240, 166) )
+
+    }
+}
+
+.footer{
+     
+        @include header_footer(rgb(58, 73, 61));
+
+}

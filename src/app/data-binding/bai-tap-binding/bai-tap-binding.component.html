@@ -1,0 +1,11 @@
+<h1>Register Form</h1>
+<h6>Email</h6>
+<input type="text" [(ngModel)] = "email"><br>
+<h6>Fullname</h6>
+<input type="text" #thamso > <br>
+<button class="btn btn-success mt-2 mb-3" (click)="change(thamso)" >Submit</button>
+
+<p><b>Email:</b> {{email}} </p>
+<p><b>Fullname:</b> {{fullname}} </p>
+
+<!-- reference variable -->

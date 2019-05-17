@@ -1,0 +1,31 @@
+<h1 class="my-3" style="color:rgb(47, 161, 123)">ngSwitch</h1>
+<div [ngSwitch]="dkSwitch">
+  <div *ngSwitchCase="'red'" style="color:red">
+    Mau Do
+  </div>
+
+  <div *ngSwitchCase="'blue'" style="color:blue">
+    Mau Xanh
+  </div>
+
+  <div *ngSwitchCase="'pink'" style="color:pink">
+    Mau Hong
+  </div>
+
+  <div *ngSwitchCase="'black'" style="color:black">
+    Mau Den
+  </div>
+
+  <div *ngSwitchDefault style="color:yellow">
+      Mau Vang
+    </div>
+
+</div>
+
+<select #t (change)="changeColor(t.value)">
+  <option value="red">red</option>
+  <option value="pink">pink</option>
+  <option value="blue">blue</option>
+  <option value="black">black</option>
+  <option value="yellow">yellow</option>
+</select>

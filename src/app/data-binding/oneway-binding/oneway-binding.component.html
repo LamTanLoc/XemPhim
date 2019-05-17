@@ -1,0 +1,18 @@
+<h1 style="color: red">Oneway binding</h1>
+
+
+<!-- interpolation -->
+<span>Ai dep trai nhat the gioi: <b>{{name_1}}</b></span>
+<br>
+<span>Ai xao lol nhat the gioi: <b>{{name_2}}</b></span>
+<br><br>
+
+<!-- Property binding -->
+<input type="text" [value]="name_2" #thamso>
+<br><br>
+<img [src]="img" alt="">
+ <br> <br>
+<!-- Event Binding -->
+
+<button class="btn btn-danger" (click)="eventBinding(thamso.value)">Event Binding</button>
+<br><br>

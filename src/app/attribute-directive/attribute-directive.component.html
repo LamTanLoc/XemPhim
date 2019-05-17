@@ -1,0 +1,18 @@
+<h1 style="color: pink">Attribute Directive</h1>
+<!-- <app-ng-class></app-ng-class> -->
+<!-- <app-ng-style></app-ng-style> -->
+<div appHighLight class="pl-5">Hello cmm Nghia dog dog dog</div>
+
+
+
+<ng-container *ngIf="mang !== null">
+
+    <div *ngFor="let item of mang">{{item}}</div>
+
+</ng-container>
+
+
+<ng-container *ngTemplateOutlet="template"></ng-container>
+<ng-template #template>
+    <div>Cai dmm thang cho Nghia</div>
+</ng-template>
